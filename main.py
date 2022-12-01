@@ -13,9 +13,9 @@ id = os.environ["id"]
 pwd = os.environ["pwd"]
 
 # 邮箱信息   == 如果不使用邮件模块，请将下列三行代码加 # 注释
-MAIL_USER = os.environ["MAIL_USER"]  # QQ邮箱账户
-MAIL_PWD = os.environ["MAIL_PWD"]  # QQ邮箱授权码
-MAIL_TO = os.environ["MAIL_TO"]  # QQ邮箱账户
+# MAIL_USER = os.environ["MAIL_USER"]  # QQ邮箱账户
+# MAIL_PWD = os.environ["MAIL_PWD"]  # QQ邮箱授权码
+# MAIL_TO = os.environ["MAIL_TO"]  # QQ邮箱账户
 
 
 
@@ -23,4 +23,4 @@ if __name__ == '__main__':
     # 打卡
     msg = daka.sign_in(id=id, pwd=pwd, name=str(id), check_today=0)
     # 发送邮件 == 不使用邮件模块，请将下行代码加 # 注释
-    utils.mail(msg, MAIL_TO, MAIL_USER=MAIL_USER, MAIL_PWD=MAIL_PWD)
+    # utils.mail(msg, MAIL_TO, MAIL_USER=MAIL_USER, MAIL_PWD=MAIL_PWD)
